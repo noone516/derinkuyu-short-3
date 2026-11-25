@@ -1,0 +1,11 @@
+{
+  "region": "us-east-1",
+  "functionName": "derinkuyu-render",
+  "timeout": 900,
+  "memory": 3008,
+  "architecture": "arm64",
+  "concurrencyLimit": 50,
+  "environmentVariables": {
+    "REMOTION_SERVE_URL": "https://${AWS::StackName}.lambda-url.us-east-1.on.aws"
+  }
+}
